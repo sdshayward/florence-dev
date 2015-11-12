@@ -25,6 +25,10 @@ handler.setLevel(logging.INFO)
 log.addHandler(handler)
 log.setLevel(logging.INFO)
 
+INFO = Color.INFO + "Refer to ONF Security Test Specification for Test Descriptions" + Color.END
+log.info(INFO)
+INFO = Color.INFO + "See also florence.log" + Color.END
+log.info(INFO)
 
 class SetupDataPlane(base_tests.SimpleDataPlane):
     def setUp(self):
